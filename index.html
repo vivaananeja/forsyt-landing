@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forsyt</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #f2f2f2;
+      overflow: hidden; /* disables scrolling */
+      font-family: sans-serif;
+    }
+
+    .wrapper {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 40px;
+    }
+
+    .container {
+      position: relative;
+      width: 450px; /* size of main image */
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    }
+
+    .container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .click-zone {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 395px;
+      height: 40px;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .logo {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      width: 190px;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <img src="forsyt.com.jpg" alt="Forsyt">
+      <a class="click-zone" href="mailto:kunal@brnd.ink" title="Enquire Now"></a>
+    </div>
+    <a href="https://brnd.ink" target="_blank" title="brnd.ink">
+      <img class="logo" src="brnd.ink.png" alt="brnd.ink logo">
+    </a>
+  </div>
+</body>
+</html>
